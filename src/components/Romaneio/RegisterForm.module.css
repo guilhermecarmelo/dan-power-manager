@@ -1,0 +1,97 @@
+/* RegisterForm.module.css */
+
+.formContainer {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.formField {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.formLabel {
+  width: 150px; /* Definindo uma largura fixa para os rótulos */
+  font-weight: bold;
+  margin-right: 10px; /* Espaço entre o rótulo e o campo de entrada */
+}
+
+.formInput {
+  flex: 1; /* Faz o campo de entrada ocupar o espaço restante */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  transition: border-color 0.3s;
+}
+
+.formInput:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.submitButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px; /* Espaço extra acima do botão */
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+.floatingButton {
+  position: fixed;
+  right: 20px;
+  bottom: 5%;
+  width: 60px;
+  height: 60px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.floatingButton:hover {
+  background-color: #0056b3;
+}
+
+/* Ajusta a posição do segundo botão */
+.buttonContainer .floatingButton:nth-child(2) {
+  right: 90px; /* Afasta o segundo botão do primeiro */
+}
+
+.tableContainer {
+  width: 100%;
+}
